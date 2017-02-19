@@ -4,11 +4,15 @@
 Making this for a weird helm bug.
 
 Repro:
+
 ```
 npm install
-helm install -n test .
+helm install --name test .
 ```
 
 This should give:
 
+```
+NAME:   test
+Error: getting deployed release "test": release: not found
 ```
